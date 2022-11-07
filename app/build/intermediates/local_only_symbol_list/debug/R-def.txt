@@ -7,11 +7,15 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable _11652_close_icon
+drawable _544641784
+drawable close_fill0_wght400_grad0_opsz48
 drawable delete_fill0_wght400_grad0_opsz48
 drawable edit_fill0_wght400_grad0_opsz48
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable image_fill0_wght400_grad0_opsz48
+font noyh
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name

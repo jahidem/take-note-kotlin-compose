@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.*
 import com.example.take_note_kotlin_compose.R
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -31,20 +32,21 @@ fun NoteScreen( showSideBar: Boolean,
     ){
     val calcPadding = LocalConfiguration.current.screenWidthDp.dp * .10f;
     val calcOfsset  = LocalConfiguration.current.screenWidthDp.dp * .64f;
-    Column(
-        modifier = Modifier
-            .padding(vertical = calcPadding, horizontal = calcPadding)
-            .fillMaxWidth()
-            .offset(x = if (showSideBar) calcOfsset else 0.dp)
-        ,
-        verticalArrangement = Arrangement.SpaceBetween,
-        horizontalAlignment = Alignment.CenterHorizontally
-    ){
+    Surface(elevation = 4.dp,) {
+        Column(
+            modifier = Modifier
+                .padding(vertical = calcPadding, horizontal = calcPadding)
+                .fillMaxWidth()
+                .offset(x = if (showSideBar) calcOfsset else 0.dp),
+            verticalArrangement = Arrangement.SpaceBetween,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
 
-        TopBar(showSideBar, onPressShowSideBar=onPressShowSideBar)
-        NoteContent()
-        Spacer(modifier = Modifier.weight(1f))
-        BottomActions()
+            TopBar(showSideBar, onPressShowSideBar = onPressShowSideBar)
+            NoteContent()
+            Spacer(modifier = Modifier.weight(1f))
+            BottomActions()
+        }
     }
 }
 

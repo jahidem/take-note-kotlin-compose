@@ -52,6 +52,7 @@ int dimen notification_top_pad 0x7f030014
 int dimen notification_top_pad_large_text 0x7f030015
 int drawable _11652_close_icon 0x7f040013
 int drawable _544641784 0x7f040014
+int drawable add_fill0_wght400_grad0_opsz48 0x7f040015
 int drawable close_fill0_wght400_grad0_opsz48 0x7f040012
 int drawable delete_fill0_wght400_grad0_opsz48 0x7f040001
 int drawable edit_fill0_wght400_grad0_opsz48 0x7f040002
@@ -70,6 +71,7 @@ int drawable notification_template_icon_bg 0x7f04000e
 int drawable notification_template_icon_low_bg 0x7f04000f
 int drawable notification_tile_bg 0x7f040010
 int drawable notify_panel_notification_icon_bg 0x7f040011
+int drawable settings_fill0_wght400_grad0_opsz48 0x7f040016
 int font noyh 0x7f0d0000
 int id accessibility_action_clickable_span 0x7f050000
 int id accessibility_custom_action_0 0x7f050001

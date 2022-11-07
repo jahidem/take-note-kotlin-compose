@@ -18,14 +18,15 @@ private val noyhFontFamily = FontFamily(light, regular, medium, semibold)
 
 val notesTittle = TextStyle(
 fontFamily = noyhFontFamily,
-fontSize = 22.sp,
+fontSize = 20.sp,
     letterSpacing = 4.sp
 )
 
 val notesSubTittle = TextStyle(
     fontFamily = noyhFontFamily,
     fontSize = 16.sp,
-    letterSpacing = 4.sp
+    letterSpacing = 4.sp,
+    fontWeight = FontWeight.W900
 )
 
 // Set of Material typography styles to start with

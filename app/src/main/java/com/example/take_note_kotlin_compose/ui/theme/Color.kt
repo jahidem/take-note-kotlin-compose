@@ -10,5 +10,7 @@ val Teal200 = Color(0xFF03DAC5)
 val grayBlack = Color(0xFF202726)
 val Gray100 = Color(0xFF797979)
 
+val White100 = Color(0x9EFFFFFF)
+
 val RedDelete = Color(0xFFFA7575)
 val ButtonBackground = Color(0xFF5B6066)

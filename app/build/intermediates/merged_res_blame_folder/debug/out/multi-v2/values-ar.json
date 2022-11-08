@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.take_note_kotlin_compose.app-mergeDebugResources-39:/values-ar/values-ar.xml",
+            "outputFile": "com.example.take_note_kotlin_compose.app-mergeDebugResources-53:/values-ar/values-ar.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ACER\\.gradle\\caches\\transforms-3\\20ef83cfe0825ef2f8268dd69d9de447\\transformed\\ui-1.3.0\\res\\values-ar\\values-ar.xml",
+                    "source": "C:\\Users\\ACER\\.gradle\\caches\\transforms-3\\2ef8758971c09476979caac2aa5a6da1\\transformed\\ui-1.3.0\\res\\values-ar\\values-ar.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ACER\\.gradle\\caches\\transforms-3\\f6a12936ecbbfb86057ffa1eb980a294\\transformed\\core-1.8.0\\res\\values-ar\\values-ar.xml",
+                    "source": "C:\\Users\\ACER\\.gradle\\caches\\transforms-3\\896d59d9c0e55b753dfdd24abd27b2f9\\transformed\\core-1.8.0\\res\\values-ar\\values-ar.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -16,10 +16,14 @@ drawable edit_fill0_wght400_grad0_opsz48
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable image_fill0_wght400_grad0_opsz48
+drawable notes_logo_background
+drawable notes_logo_foreground
 drawable settings_fill0_wght400_grad0_opsz48
 font noyh
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap notes_logo
+mipmap notes_logo_round
 string app_name
 style Theme.Takenotekotlincompose
 xml backup_rules

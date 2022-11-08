@@ -9,9 +9,8 @@ import androidx.room.PrimaryKey
 @Entity
 data class NoteContent(
     @PrimaryKey(autoGenerate = true)
-    val noteContentId: Int = 1,
-    @ColumnInfo(typeAffinity = ColumnInfo.BLOB)
-    val contentType: Int,
+    val noteContentId: Int,
+    val noteContentType: Int,
     val imageData: ByteArray? = null,
     val textData: String? = null,
     val parentNoteId: Int){

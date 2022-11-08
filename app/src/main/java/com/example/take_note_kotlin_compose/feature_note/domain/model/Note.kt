@@ -14,7 +14,7 @@ data class Note(
     val isActive: Boolean
     )
  val noteList = listOf<Note>(
-     Note(1,"Waiting" ,"sadfs sadfsad","last sec ago", true),
+     Note(1,"Wakjhkjhbkjbkjbkjbiting" ,"sadfs sadfsad","last sec ago", true),
      Note(2,"Hopping" ,"sadfs sadfsad","Thu, Aug 27", false),
      Note(3,"Jumping" ,"sadfs sadfsad","Fri, Jan 24", false),
      Note(4,"Fetching" ,"sadfs sadfsad","Wed, Apr 22",false),

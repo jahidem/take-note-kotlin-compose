@@ -6,6 +6,8 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.gestures.Orientation
 import androidx.compose.foundation.gestures.scrollable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.verticalScroll
@@ -22,6 +24,8 @@ import androidx.compose.ui.text.font.FontVariation.width
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.take_note_kotlin_compose.feature_note.data.Note
+import com.example.take_note_kotlin_compose.feature_note.data.noteList
 import com.example.take_note_kotlin_compose.ui.theme.Gray100
 import com.example.take_note_kotlin_compose.ui.theme.White100
 import com.example.take_note_kotlin_compose.ui.theme.notesSubTittle
@@ -36,35 +40,24 @@ fun SidebarScreen(showSideBar: Boolean){
         .background(MaterialTheme.colors.secondary)
     ) {
         Column(modifier = Modifier.weight(1f)) {
-            Spacer(modifier = Modifier.weight(0.25f))
-            ScrollingNotes(Modifier.weight(0.75f, fill = false))
+            Spacer(modifier = Modifier.weight(0.26f))
+            ScrollingNotes(Modifier.weight(0.74f, fill = false), noteList)
         }
         BottomNavs()
     }
 }
 @Composable
-fun ScrollingNotes(modifier: Modifier){
-    Column(
+fun ScrollingNotes(modifier: Modifier, noteList: List<Note>){
+    LazyColumn(
         modifier = Modifier
             .fillMaxWidth()
-            .verticalScroll(rememberScrollState())
-            .then(modifier)
-        ,
+            .then(modifier) ,
         horizontalAlignment = Alignment.CenterHorizontally,
+        contentPadding = PaddingValues(30.dp)
     ) {
-        NotesItem("Waiting", "last sec ago", true)
-        NotesItem(heading = "Hopping", timeStamp = "Thu, Aug 27", false)
-        NotesItem("Waiting", "last sec ago", true)
-        NotesItem(heading = "Hopping", timeStamp = "Thu, Aug 27", false)
-        NotesItem("Waiting", "last sec ago", true)
-        NotesItem(heading = "Hopping", timeStamp = "Thu, Aug 27", false)
-        NotesItem("Waiting", "last sec ago", true)
-        NotesItem(heading = "Hopping", timeStamp = "Thu, Aug 27", false)
-        NotesItem("Waiting", "last sec ago", true)
-        NotesItem(heading = "Hopping", timeStamp = "Thu, Aug 27", false)
-        NotesItem("Waiting", "last sec ago", true)
-        NotesItem(heading = "Hopping", timeStamp = "Thu, Aug 27", false)
-
+        items(noteList) { note ->
+            NotesItem(note.tittle, note.timeStamp, note.isActive)
+        }
     }
 }
 
@@ -76,8 +69,7 @@ fun NotesItem(
     timeStamp: String,
     activeNote: Boolean
 ) {
-    Row (modifier = Modifier
-        .padding(vertical = 30.dp),
+    Row (modifier = Modifier .padding(vertical = 30.dp),
         verticalAlignment = Alignment.CenterVertically
         ) {
         if (activeNote)
@@ -89,9 +81,6 @@ fun NotesItem(
 
                     .background(White100)
             )
-            {
-
-            }
 
         Column(
         ) {
@@ -141,3 +130,5 @@ fun BottomNavItem(text: String,
         )
     }
 }
+
+
